@@ -6,7 +6,19 @@ body {
   animation: fadein 3s;
   font-family: "Reenie Beanie";
   font-size: 10rem;
+  margin-bottom: 0;
   text-align: center;
+}
+
+.art {
+  text-align: center;
+}
+
+.canvas {
+  background: gray;
+  height: 75vmin;
+  margin: auto
+  width: 75vmin;
 }
 
 @keyframes fadein {
