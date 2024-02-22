@@ -11,14 +11,17 @@ body {
 }
 
 .art {
-  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .canvas {
-  background: gray;
-  height: 75vmin;
-  margin: auto
-  width: 75vmin;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 @keyframes fadein {
