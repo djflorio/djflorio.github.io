@@ -10,16 +10,40 @@ body {
   text-align: center;
 }
 
+.categories {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1
+}
+
+.categories_panel {
+  flex: 1;
+  position: relative;
+}
+
+.categories_panel:nth-child(1) {
+}
+
+.categories_panel:nth-child(2) {
+  opacity: 0.5;
+}
+
 .art {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
+  text-align: center;
   top: 0;
-  z-index: -1;
 }
 
-.canvas {
+.art__canvas {
+  background-color: green;
+  width: 100%;
   min-height: 100%;
   min-width: 100%;
 }

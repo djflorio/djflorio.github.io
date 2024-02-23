@@ -1,12 +1,14 @@
-const svg = SVG(".canvas");
+const musicSvg = SVG("#music");
+const codingSvg = SVG("#coding");
+const bakingSvg = SVG("#baking");
 
 generate();
 
 function generate() {
-  svg.clear();
+  musicSvg.clear();
 
   for (let i = 0; i < 75; i++) {
-    const circle = svg.circle(5).cx(100).cy(100).fill("hsl(0, 100%, 100%)").node;
+    const circle = musicSvg.circle(5).cx(100).cy(100).fill("hsl(0, 100%, 100%)").node;
 
     gsap.to(circle, {
       x: "random(-100, 100, true)",
