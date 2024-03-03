@@ -29,7 +29,6 @@ body {
 }
 
 .categories_panel:nth-child(2) {
-  opacity: 0.5;
 }
 
 .art {
@@ -42,7 +41,6 @@ body {
 }
 
 .art__canvas {
-  background-color: green;
   width: 100%;
   min-height: 100%;
   min-width: 100%;
