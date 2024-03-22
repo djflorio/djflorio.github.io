@@ -2,33 +2,66 @@ body {
   margin: 0;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #222;
+  color: #ccc;
+}
+
 .title {
   animation: fadein 3s;
-  font-family: "Reenie Beanie";
-  font-size: 10rem;
-  margin-bottom: 0;
+  font-family: "Londrina Sketch";
+  font-size: 4rem;
+  margin: 0;
   text-align: center;
 }
 
 .categories {
-  bottom: 0;
   display: flex;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+  flex: 1;
   z-index: -1
 }
 
-.categories_panel {
+.categories__header {
+  font-family: "Londrina Sketch";
+  font-size: 4rem;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.categories__header--coding {
+  color: #5666ab;
+}
+
+.categories__header--music {
+  color: #6eab56;
+}
+
+.categories__header--baking {
+  color: #ab6456;
+}
+
+.categories__panel {
   flex: 1;
   position: relative;
 }
 
-.categories_panel:nth-child(1) {
+.categories__panel--coding {
+  background-color: #0d2d52;
 }
 
-.categories_panel:nth-child(2) {
+.categories__panel--music {
+  background-color: #1a520d;
+}
+
+.categories__panel--baking {
+  background-color: #52190d;
 }
 
 .art {

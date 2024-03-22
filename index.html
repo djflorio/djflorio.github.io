@@ -4,26 +4,35 @@
 		<title>Dan Florio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.0/svg.min.js" integrity="sha512-EmfT33UCuNEdtd9zuhgQClh7gidfPpkp93WO8GEfAP3cLD++UM1AG9jsTUitCI9DH5nF72XaFePME92r767dHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	</head>
 	<body>
-		<h1 class="title">Dan Florio</h1>
-    <div class="categories">
-      <div class="categories_panel">
-        <div class="art">
-          <svg class="art__canvas" id="music" viewbox="0 0 200 200" preserveAspectRatio="xMidYMin slice"></svg>
-        </div>
+    <div class="content">
+      <div class="header">
+        <h1 class="title">Dan Florio</h1>
       </div>
-      <div class="categories_panel">
-        <div class="art">
-          <svg class="art__canvas" id="coding" viewbox="0 0 200 200" preserveAspectRatio="xMidYMin slice"></svg>
+      <div class="categories">
+        <div class="categories__panel categories__panel--coding">
+          <h2 class="categories__header categories__header--coding">Coding</h2>
+          <div class="art">
+            <svg class="art__canvas" id="coding" viewbox="0 0 200 200" preserveAspectRatio="xMidYMin slice"></svg>
+          </div>
         </div>
-      </div>
-      <div class="categories_panel">
-        <!--<svg class="canvas" id="baking" viewbox="0 0 200 200"></svg>-->
+        <div class="categories__panel categories__panel--music">
+          <h2 class="categories__header categories__header--music">Music</h2>
+          <div class="art">
+            <svg class="art__canvas" id="music" viewbox="0 0 200 200" preserveAspectRatio="xMidYMin slice"></svg>
+          </div>
+        </div>
+        <div class="categories__panel categories__panel--baking">
+          <h2 class="categories__header categories__header--baking">Baking</h2>
+          <div class="art">
+            <svg class="art__canvas" id="baking" viewbox="0 0 200 200" preserveAspectRatio="xMidYMin slice"></svg>
+          </div>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
