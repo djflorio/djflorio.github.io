@@ -15,7 +15,7 @@ body {
 
 .title {
   animation: fadein 3s;
-  font-family: "Londrina Sketch";
+  font-family: "Londrina Solid";
   font-size: 4rem;
   margin: 0;
   text-align: center;
@@ -24,11 +24,10 @@ body {
 .categories {
   display: flex;
   flex: 1;
-  z-index: -1
 }
 
 .categories__header {
-  font-family: "Londrina Sketch";
+  font-family: "Londrina Solid";
   font-size: 4rem;
   position: relative;
   text-align: center;
@@ -79,6 +78,35 @@ body {
   min-width: 100%;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.link {
+  align-items: center;
+  background-color: #333;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.link__icon {
+  width: 3rem;
+}
+
+.link__title {
+
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -86,5 +114,15 @@ body {
 
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+  .categories__header {
+    font-size: 3rem;
+    margin: 1rem;
   }
 }
