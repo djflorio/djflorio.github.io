@@ -104,7 +104,11 @@ body {
 }
 
 .link__title {
+  font-weight: bold;
+}
 
+.link__subtitle {
+  font-size: 0.8rem;
 }
 
 @keyframes fadein {
