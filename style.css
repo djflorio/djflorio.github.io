@@ -3,139 +3,19 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  background-image: url('/img/campsite.jpg');
+  background-position: left;
+  background-size: cover;
   height: 100vh;
-}
-
-.header {
-  background-color: #222;
-  color: #ccc;
+  padding: 2rem;
 }
 
 .title {
-  animation: fadein 3s;
-  font-family: "Londrina Solid";
-  font-size: 4rem;
-  margin: 0;
-  text-align: center;
-}
-
-.categories {
-  display: flex;
-  flex: 1;
-}
-
-.categories__header {
-  font-family: "Londrina Solid";
-  font-size: 4rem;
-  position: relative;
-  text-align: center;
-  z-index: 2;
-}
-
-.categories__header--coding {
-  color: #5666ab;
-}
-
-.categories__header--music {
-  color: #6eab56;
-}
-
-.categories__header--baking {
-  color: #ab6456;
-}
-
-.categories__panel {
-  flex: 1;
-  position: relative;
-}
-
-.categories__panel--coding {
-  background-color: #0d2d52;
-}
-
-.categories__panel--music {
-  background-color: #1a520d;
-}
-
-.categories__panel--baking {
-  background-color: #52190d;
-}
-
-.art {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-}
-
-.art__canvas {
-  width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto";
-  gap: 1rem;
-  list-style: none;
-  padding: 1rem;
-  position: relative;
-  z-index: 2;
-}
-
-.link {
-  align-items: center;
-  background-color: #333;
-  color: white;
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-.link__icon {
-  width: 3rem;
-}
-
-.link__title {
-  font-weight: bold;
-}
-
-.link__subtitle {
-  font-size: 0.8rem;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .categories {
-    flex-direction: column;
-  }
-  .categories__header {
-    font-size: 3rem;
-    margin: 1rem;
-  }
-  .link__icon {
-    width: 5rem;
-  }
-  .link__title {
-    font-size: 2.5rem;
-  }
-  .link__subtitle {
-    font-size: 2rem;
-  }
+  border: solid 0.7rem #fff;
+  border-radius: 2.5rem;
+  color: #fff;
+  display: inline-block;
+  font-family: "Lobster", sans-serif;
+  font-size: 6rem;
+  padding: 0 1rem 0 1rem;
 }
