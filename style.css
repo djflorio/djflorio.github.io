@@ -129,4 +129,13 @@ body {
     font-size: 3rem;
     margin: 1rem;
   }
+  .link__icon {
+    width: 5rem;
+  }
+  .link__title {
+    font-size: 2.5rem;
+  }
+  .link__subtitle {
+    font-size: 2rem;
+  }
 }
